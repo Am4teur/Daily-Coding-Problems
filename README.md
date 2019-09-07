@@ -6,6 +6,7 @@ Python 3 coding solutions to the daily coding problems from https://dailyintervi
 #### Daily Problem 001
 
 Asked by Facebook:
+
 You are given a list of numbers, and a target number k. Return whether or not
 there are two numbers in the list that add up to k.
 
@@ -34,6 +35,7 @@ Asked by Microsoft:
 
 Given a string, find the length of the longest substring without repeating characters.
 
+[starting code]
 ```
 class Solution:
     def lengthOfLongestSubstring(self, s):
