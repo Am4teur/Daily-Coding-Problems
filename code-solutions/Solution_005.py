@@ -25,19 +25,19 @@ class MaxStack:
 
 if(__name__ == "__main__"):
     s = MaxStack()
-    s.push(1)
-    s.push(2)
-    s.push(3)
-    s.push(2)
+    s.push(5)
+    s.push(6)
+    s.push(7)
+    s.push(6)
     print(s.max())
-    # 3
+    # 7
     s.pop()
     s.pop()
     print(s.max())
-    # 2
+    # 6
     s.pop()
     print(s.max())
-    # 1
+    # 5
     s.pop()
     print(s.max())
     # None
