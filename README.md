@@ -19,7 +19,7 @@ return `True` since `4 + 1 = 5`.
 def two_sum(list, k):
     # Fill this in.
 
-print two_sum([4,7,1,-3,2], 5)
+print(two_sum([4,7,1,-3,2], 5))
 # True
 ```
 
@@ -86,7 +86,7 @@ class Node:
         self.right = None
         self.value = value
     def preorder(self):
-        print self.value,
+        print(self.value)
         if self.left: self.left.preorder()
         if self.right: self.right.preorder()
 
@@ -102,7 +102,7 @@ root.right.left = Node('f')
 
 root.preorder()
 # a b d e c f 
-print "\n"
+print("\n")
 invert(root)
 root.preorder()
 # a c f b e d
@@ -140,7 +140,7 @@ root.left.right = Node(6)
 root.right.left = Node(10) 
 root.right.right = Node(14) 
 
-print findCeilingFloor(root, 5)
+print(findCeilingFloor(root, 5))
 # (4, 6)
 ```
 
@@ -179,14 +179,35 @@ s.push(1)
 s.push(2)
 s.push(3)
 s.push(2)
-print s.max()
+print(s.max())
 # 3
 s.pop()
 s.pop()
-print s.max()
+print(s.max())
 # 2
 ```
 
 [Solution](code-solutions/Solution_005.py)
 
 ---
+
+#### Daily Problem 006
+
+Asked by LinkedIn:
+
+You are given a positive integer N which represents the number of steps in a staircase. You can either climb 1 or 2 steps at a time. Write a function that returns the number of unique ways to climb the stairs.
+
+```
+def staircase(n):
+    # Fill this in.
+  
+print(staircase(4))
+# 5
+print(staircase(5))
+# 8
+```
+
+Can you find a solution in O(n) time?
+
+---
+
